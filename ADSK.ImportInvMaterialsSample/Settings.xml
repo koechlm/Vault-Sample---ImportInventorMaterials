@@ -2,7 +2,7 @@
 <settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   
   <!-- The name/value pair of a setting -->
-    <SettingName>Value</SettingName>
+  <mMatPropName>Material</mMatPropName>
   
   <!-- Output Path -->
   <!--<OutputPath>C:\Temp\SD124422\</OutputPath>-->

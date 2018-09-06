@@ -23,7 +23,7 @@ using Autodesk.DataManagement.Client.Framework.Vault.Settings;
 using Autodesk.DataManagement.Client.Framework.Vault.Results;
 using VDF = Autodesk.DataManagement.Client.Framework;
 
-namespace API_Onboarding_Custom_Job
+namespace ADSK_ImportInvMaterialsSample
 {
     public class Util
     {

@@ -5,8 +5,8 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("API Onboarding - Custom Job")]
-[assembly: AssemblyDescription("API Introduction Sample 02 - Custom Job")]
+[assembly: AssemblyTitle("API Sample Custom Job")]
+[assembly: AssemblyDescription("Sample Job Importing Inventor Materials to Vault Material Property")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Autodesk")]
 [assembly: AssemblyProduct("Autodesk Vault Professional - API Sample")]
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2019.24.0.0")]
-[assembly: AssemblyFileVersion("2019.24.0.0")]
+[assembly: AssemblyVersion("2019.24.1.0")]
+[assembly: AssemblyFileVersion("2019.24.1.0")]

@@ -16,14 +16,14 @@ using System.IO;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace API_Onboarding_Custom_Job
+namespace ADSK_ImportInvMaterialsSample
 {
 
     [XmlRoot("settings")]
     public class Settings
     {
-        [XmlElement("SettingName")]
-        public string mSettingName;
+        [XmlElement("mMatPropName")]
+        public string mMatPropName;
 
         #region for future use
         //[XmlElement("OutputPath")]
