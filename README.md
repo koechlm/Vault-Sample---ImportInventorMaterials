@@ -21,6 +21,8 @@ TO CONFIGURE:
 1) Copy the folder Autodesk.ImportInvMaterialsSample to %ProgramData%\Autodesk\Vault 2016\Extensions\.
 2) Check the Vault Behavior->Properties configuration for the UDP "Material": The utility is pre-configured to use the default property "Material". For localized Vault databases or different property used for material definition edit the Setting.xml.
 Change the Value of attribute <mMatPropName> accordingly.
+3) Add the job to the Job Queue either by executing the Powershell script (part of source code) or integrate into a custom lifecycle managing your *.adsklib files; add the Job-Type name
+"Autodesk.ImportInvMaterialsSample" to the transition's 'Custom Job Types' tab.
 
 DISCLAIMER:
 ---------------------------------

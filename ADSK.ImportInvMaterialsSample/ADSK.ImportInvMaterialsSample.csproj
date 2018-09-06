@@ -106,7 +106,6 @@
     <None Include="Vault-API-2019-Sample-AddJobImportInvMaterialSample.ps1" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ReadMe.txt" />
     <Content Include="Settings.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
