@@ -24,7 +24,7 @@
 		$serverID = New-Object Autodesk.Connectivity.WebServices.ServerIdentities
 			$serverID.DataServer = "192.168.85.128"
 			$serverID.FileServer = "192.168.85.128"
-		$VaultName = "VLT-MKDE"
+		$VaultName = "Inv-Samples"
 		$UserName = "Administrator"
 		$password = ""
 		#new in 2019 API: licensing agent enum "Client" "Server" or "None" (=readonly access). 2017 and 2018 required local client installed and licensed

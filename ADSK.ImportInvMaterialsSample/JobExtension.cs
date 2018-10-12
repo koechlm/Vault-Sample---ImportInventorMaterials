@@ -98,13 +98,14 @@ namespace ADSK_ImportInvMaterialsSample
                 VDF.Vault.Currency.Entities.FileIteration fileIteration = new VDF.Vault.Currency.Entities.FileIteration(context.Connection, mFile);
                 mDownloadSettings.AddFileToAcquire(fileIteration, VDF.Vault.Settings.AcquireFilesSettings.AcquisitionOption.Download);
 
-                VDF.Vault.Results.AcquireFilesResults mDownLoadResult = context.Connection.FileManager.AcquireFiles(mDownloadSettings);
-                VDF.Vault.Results.FileAcquisitionResult fileAcquisitionResult = mDownLoadResult.FileResults.FirstOrDefault();
-                mIpjLocalPath = fileAcquisitionResult.LocalPath.FullPath;
-
-                //activate this Vault's ipj temporarily 
                 try
                 {
+                    VDF.Vault.Results.AcquireFilesResults mDownLoadResult = context.Connection.FileManager.AcquireFiles(mDownloadSettings);
+                    VDF.Vault.Results.FileAcquisitionResult fileAcquisitionResult = mDownLoadResult.FileResults.FirstOrDefault();
+                    mIpjLocalPath = fileAcquisitionResult.LocalPath.FullPath;
+
+                    //activate this Vault's ipj temporarily 
+
                     Inventor.InventorServer mInv = context.InventorObject as InventorServer;
                     Inventor.DesignProjectManager projectManager = mInv.DesignProjectManager;
                     Inventor.DesignProject mSaveProject = projectManager.ActiveDesignProject;
@@ -121,7 +122,7 @@ namespace ADSK_ImportInvMaterialsSample
                 }
                 catch (Exception)
                 {
-                    context.Log("Job could not retrieve materials based on the ipj material library setting.", MessageType.eError);
+                    context.Log("Job could not retrieve materials based on the ipj material library setting. - Note: the ipj must not be checked out by another user.", MessageType.eError);
                     return JobOutcome.Failure;
                 }
 
@@ -139,6 +140,8 @@ namespace ADSK_ImportInvMaterialsSample
                 EntClassCtntSrcPropCfg[] mEntClassCtntSrcPropCfg = mPropDefInfo[0].EntClassCtntSrcPropCfgArray;
                 PropConstr[] mPropConstrs = mPropDefInfo[0].PropConstrArray;
                 //instead of reading existing values consume the new list of materials
+                //sort the material listing. 
+                mMaterials.Sort();
                 System.Object[] mListValues = mMaterials.ToArray(); //mPropDefInfo[0].ListValArray;
                 PropDefInfo mUpdatedPropDefInfo = mWsMgr.PropertyService.UpdatePropertyDefinitionInfo(mPropDef, mEntClassCtntSrcPropCfg, mPropConstrs, mListValues);
                 if (mUpdatedPropDefInfo != null)
