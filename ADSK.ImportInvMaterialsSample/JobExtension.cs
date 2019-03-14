@@ -166,7 +166,7 @@ namespace ADSK_ImportInvMaterialsSample
                     bool mLibFound = false;
                     foreach (var item in mDownLoadResult.FileResults)
                     {
-                        if (item.LocalPath.ToString() == mMatLibPath)
+                        if (item.LocalPath.ToString().ToLower() == mMatLibPath.ToLower())
                         {
                             mLibFound = true;
                             break;
