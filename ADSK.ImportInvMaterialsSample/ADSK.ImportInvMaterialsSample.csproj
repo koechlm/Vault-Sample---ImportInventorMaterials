@@ -56,28 +56,33 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autodesk.Connectivity.Explorer.ExtensibilityTools">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Autodesk\Autodesk Vault 2019 SDK\bin\x64\Autodesk.Connectivity.Explorer.ExtensibilityTools.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Autodesk Vault 2020 SDK\bin\x64\Autodesk.Connectivity.Explorer.ExtensibilityTools.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.Connectivity.Extensibility.Framework">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Autodesk\Autodesk Vault 2019 SDK\bin\x64\Autodesk.Connectivity.Extensibility.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Autodesk Vault 2020 SDK\bin\x64\Autodesk.Connectivity.Extensibility.Framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.Connectivity.JobProcessor.Extensibility">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Autodesk\Autodesk Vault 2019 SDK\bin\x64\Autodesk.Connectivity.JobProcessor.Extensibility.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Autodesk Vault 2020 SDK\bin\x64\Autodesk.Connectivity.JobProcessor.Extensibility.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.Connectivity.WebServices">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Autodesk\Autodesk Vault 2019 SDK\bin\x64\Autodesk.Connectivity.WebServices.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Autodesk Vault 2020 SDK\bin\x64\Autodesk.Connectivity.WebServices.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.DataManagement.Client.Framework">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Autodesk\Autodesk Vault 2019 SDK\bin\x64\Autodesk.DataManagement.Client.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Autodesk Vault 2020 SDK\bin\x64\Autodesk.DataManagement.Client.Framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.DataManagement.Client.Framework.Vault">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Autodesk\Autodesk Vault 2019 SDK\bin\x64\Autodesk.DataManagement.Client.Framework.Vault.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Autodesk Vault 2020 SDK\bin\x64\Autodesk.DataManagement.Client.Framework.Vault.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.Inventor.Interop, Version=24.0.0.0, Culture=neutral, PublicKeyToken=d84147f8b4276564, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Inventor 2020\Bin\Public Assemblies\Autodesk.Inventor.Interop.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -98,12 +103,11 @@
   <ItemGroup>
     <None Include="ADSK.ImportInvMaterialsSample.vcet.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Autodesk.API-Sample-Signature.pfx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Autodesk.ImportInvMaterialsSample.zip" />
-    <None Include="Vault-API-2019-Sample-AddJobImportInvMaterialSample.ps1" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Settings.xml">
@@ -111,15 +115,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="Inventor">
-      <Guid>{D98A091D-3A0F-4C3E-B36E-61F62068D488}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>primary</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
     <COMReference Include="stdole">
       <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>2</VersionMajor>

@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Autodesk")]
 [assembly: AssemblyProduct("Autodesk Vault Professional - API Sample")]
-[assembly: AssemblyCopyright("Copyright ©  2018 Autodesk, Markus Koechl")]
+[assembly: AssemblyCopyright("Copyright ©  2019 Autodesk, Markus Koechl")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2019.24.2.1")]
-[assembly: AssemblyFileVersion("2019.24.2.1")]
+[assembly: AssemblyVersion("2020.25.0.0")]
+[assembly: AssemblyFileVersion("2020.25.0.0")]
