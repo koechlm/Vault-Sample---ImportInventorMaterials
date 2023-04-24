@@ -56,7 +56,7 @@ namespace ADSK_ImportInvMaterialsSample
         /// <returns>True if the user is an administrator. Otherwise false.</returns>
         public static bool IsAdmin(Connection conn)
         {
-            long userId = conn.WebServiceManager.SecurityService.SecurityHeader.UserId;
+            long userId = conn.WebServiceManager.SecurityService.Session.User.Id;
             if (userId > 0)
             {
                 Permis[] permissions = conn.WebServiceManager.AdminService.GetPermissionsByUserId(userId);

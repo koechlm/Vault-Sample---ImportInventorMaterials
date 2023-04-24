@@ -37,6 +37,7 @@ The job expects that all library definition files configured in the Inventor pro
 
 VERSION HISTORY / RELEASE NOTES:
 ---------------------------------
+2022.0.0.0 - Compatibility Update
 2021.0.0.0 - Compatibility Update
 2019.24.1.0 - Initial Version
 2019.24.2.0 - Added library file(s) download and validation against Inventor project file (ipj) settings.

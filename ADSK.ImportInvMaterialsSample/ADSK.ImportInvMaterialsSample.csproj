@@ -47,7 +47,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>bin\x64\Release\2021\</OutputPath>
+    <OutputPath>bin\x64\Release\2022\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -108,8 +108,47 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </None>
+    <None Include="SDK\SSOClient.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="SDK\AdskLicensingSDK_5.dll" />
+    <Content Include="SDK\AdSSOServices.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.AdSSOWrapper.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.Explorer.Extensibility.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.Explorer.Extensibility.XML" />
+    <Content Include="SDK\Autodesk.Connectivity.Explorer.ExtensibilityTools.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.Explorer.ExtensibilityTools.XML" />
+    <Content Include="SDK\Autodesk.Connectivity.Extensibility.Framework.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.Extensibility.Framework.XML" />
+    <Content Include="SDK\Autodesk.Connectivity.JobProcessor.Extensibility.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.JobProcessor.Extensibility.XML" />
+    <Content Include="SDK\Autodesk.Connectivity.LicenseWrapper.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.WebServices.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.WebServices.WCF.dll" />
+    <Content Include="SDK\Autodesk.Connectivity.WebServices.XML" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.dll" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.Forms.dll" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.Forms.xml" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.Vault.dll" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.Vault.Forms.dll" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.Vault.Forms.xml" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.Vault.xml" />
+    <Content Include="SDK\Autodesk.DataManagement.Client.Framework.xml" />
+    <Content Include="SDK\Autodesk.DataManagement.Server.Extensibility.dll" />
+    <Content Include="SDK\Autodesk.Inventor.Interop.dll" />
+    <Content Include="SDK\DevExpress.Data.v19.1.dll" />
+    <Content Include="SDK\DevExpress.Office.v19.1.Core.dll" />
+    <Content Include="SDK\DevExpress.Pdf.v19.1.Core.dll" />
+    <Content Include="SDK\DevExpress.Printing.v19.1.Core.dll" />
+    <Content Include="SDK\DevExpress.RichEdit.v19.1.Core.dll" />
+    <Content Include="SDK\DevExpress.Sparkline.v19.1.Core.dll" />
+    <Content Include="SDK\DevExpress.Utils.v19.1.dll" />
+    <Content Include="SDK\DevExpress.XtraBars.v19.1.dll" />
+    <Content Include="SDK\DevExpress.XtraEditors.v19.1.dll" />
+    <Content Include="SDK\DevExpress.XtraGrid.v19.1.dll" />
+    <Content Include="SDK\DevExpress.XtraLayout.v19.1.dll" />
+    <Content Include="SDK\DevExpress.XtraPrinting.v19.1.dll" />
+    <Content Include="SDK\DevExpress.XtraTreeList.v19.1.dll" />
     <Content Include="Settings.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
