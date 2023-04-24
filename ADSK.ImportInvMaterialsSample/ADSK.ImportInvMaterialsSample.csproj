@@ -136,33 +136,6 @@
     <Content Include="SDK\Autodesk.DataManagement.Client.Framework.xml" />
     <Content Include="SDK\Autodesk.DataManagement.Server.Extensibility.dll" />
     <Content Include="SDK\Autodesk.Inventor.Interop.dll" />
-    <Content Include="SDK\DevExpress.Data.v19.1.dll" />
-    <Content Include="SDK\DevExpress.Data.v21.1.dll" />
-    <Content Include="SDK\DevExpress.Office.v19.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Office.v21.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Pdf.v19.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Pdf.v21.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Pdf.v21.1.Drawing.dll" />
-    <Content Include="SDK\DevExpress.Printing.v19.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Printing.v21.1.Core.dll" />
-    <Content Include="SDK\DevExpress.RichEdit.v19.1.Core.dll" />
-    <Content Include="SDK\DevExpress.RichEdit.v21.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Sparkline.v19.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Sparkline.v21.1.Core.dll" />
-    <Content Include="SDK\DevExpress.Utils.v19.1.dll" />
-    <Content Include="SDK\DevExpress.Utils.v21.1.dll" />
-    <Content Include="SDK\DevExpress.XtraBars.v19.1.dll" />
-    <Content Include="SDK\DevExpress.XtraBars.v21.1.dll" />
-    <Content Include="SDK\DevExpress.XtraEditors.v19.1.dll" />
-    <Content Include="SDK\DevExpress.XtraEditors.v21.1.dll" />
-    <Content Include="SDK\DevExpress.XtraGrid.v19.1.dll" />
-    <Content Include="SDK\DevExpress.XtraGrid.v21.1.dll" />
-    <Content Include="SDK\DevExpress.XtraLayout.v19.1.dll" />
-    <Content Include="SDK\DevExpress.XtraLayout.v21.1.dll" />
-    <Content Include="SDK\DevExpress.XtraPrinting.v19.1.dll" />
-    <Content Include="SDK\DevExpress.XtraPrinting.v21.1.dll" />
-    <Content Include="SDK\DevExpress.XtraTreeList.v19.1.dll" />
-    <Content Include="SDK\DevExpress.XtraTreeList.v21.1.dll" />
     <Content Include="Settings.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
