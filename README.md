@@ -37,6 +37,7 @@ The job expects that all library definition files configured in the Inventor pro
 
 VERSION HISTORY / RELEASE NOTES:
 ---------------------------------
+2024.0.0.0 - Compatibility Update
 2023.0.0.0 - Compatibility Update; enhanced validation of behavior configuration access rights
 2022.0.0.0 - Compatibility Update
 2021.0.0.0 - Compatibility Update
