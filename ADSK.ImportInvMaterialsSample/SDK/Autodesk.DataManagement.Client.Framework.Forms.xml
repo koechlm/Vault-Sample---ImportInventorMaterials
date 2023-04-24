@@ -34,6 +34,11 @@
       <param>Contains the restrictions to be displayed as well as options that control the behavior of the GUI.</param>
       <returns>The button clicked by the user.</returns>
     </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Forms.Library.ShowWarning(System.String,System.String,Autodesk.DataManagement.Client.Framework.Forms.Currency.ButtonConfiguration)">
+      <summary>Displays an warning dialog box with the specified message and title.</summary>
+      <param>The warning text to display in the dialog box.The Caption of the dialog box.The button selection that will be made available in the dialog box.</param>
+      <returns>The windows DialogResult which describes the button that was selected.</returns>
+    </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Forms.Library.ShowError(System.Exception,System.String)">
       <summary>Displays an error dialog box which displays information about a specific exception.</summary>
       <param>The exception object to display information for.The caption of the dialog box.</param>
@@ -52,6 +57,13 @@
     <member name="M:Autodesk.DataManagement.Client.Framework.Forms.Library.ShowError(System.String,System.String,System.String,System.Action)">
       <summary>Displays an error dialog box with the specified message and optionally, a link to launch help.</summary>
       <param>The error text to display in the dialog box.The Caption of the dialog box.Help topic to be displayed as link textA delegate that takes care of launching help</param>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Forms.Library.ShowMessage(System.String,System.String,System.String,System.Action,System.Boolean)">
+      <summary>Displays a message or error dialog box with the specified message and optionally, a link to launch help.</summary>
+      <param>The message text to display in the dialog box.The Caption of the dialog box.Help topic to be displayed as link textA delegate that takes care of launching helpBool value indecating which dialog type to display, Error or Info</param>
+      <returns>The windows DialogResult which describes the button that was selected. The following chart shows the possible return codes for each button.
+
+<list type="table"><listheader><term>Button</term><description>Return Code</description></listheader><item><term>"Abort", "Skip All"</term><description>DialogResult.Abort</description></item><item><term>"Cancel"</term><description>DialogResult.Cancel</description></item><item><term>"No"</term><description>DialogResult.No</description></item><item><term>"OK"</term><description>DialogResult.OK</description></item><item><term>"Retry"</term><description>DialogResult.Retry</description></item><item><term>"Skip"</term><description>DialogResult.Ignore</description></item><item><term>"Yes"</term><description>DialogResult.Yes</description></item></list></returns>
     </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Forms.Library.ShowMessage(System.String,System.String,Autodesk.DataManagement.Client.Framework.Forms.Currency.ButtonConfiguration)">
       <summary>Displays a message box with the specified text, caption, and button configuration (ie. Yes/No, Ok/Cancel, etc...)</summary>
@@ -153,6 +165,21 @@ for.</summary>
     </member>
     <member name="F:Autodesk.DataManagement.Client.Framework.Forms.Currency.ButtonConfiguration.ContinueCancel">
       <summary>The dialog contains a Continue and a Cancel button.</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Forms.Currency.IconConfiguration">
+      <summary>The choices for icons in the Common Message box dialogs.</summary>
+    </member>
+    <member name="F:Autodesk.DataManagement.Client.Framework.Forms.Currency.IconConfiguration.Error">
+      <summary>The Error icon will be shown.</summary>
+    </member>
+    <member name="F:Autodesk.DataManagement.Client.Framework.Forms.Currency.IconConfiguration.Infromation">
+      <summary>The Infromation icon will be shown.</summary>
+    </member>
+    <member name="F:Autodesk.DataManagement.Client.Framework.Forms.Currency.IconConfiguration.Warning">
+      <summary>The Warning icon will be shown.</summary>
+    </member>
+    <member name="F:Autodesk.DataManagement.Client.Framework.Forms.Currency.IconConfiguration.Question">
+      <summary>The Question icon will be shown.</summary>
     </member>
     <member name="T:Autodesk.DataManagement.Client.Framework.Forms.Currency.PromptAnswer">
       <summary>Represents the answer to a prompt.</summary>
@@ -604,6 +631,9 @@ name will be swapped for it.Optional parameter that provides the description for
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Forms.Settings.ShowRestrictionsSettings.GridLabel">
       <summary>Gets or sets the label that is displayed above the list of restrictions.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Forms.Settings.ShowRestrictionsSettings.ReasonColumnCaption">
+      <summary>Gets or sets the caption for the column which displays the restrictionReason. Should not null or empty to show the column.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Forms.Settings.ShowRestrictionsSettings.RestrictedObjectNameColumnCaption">
       <summary>Gets or sets the caption for the column which displays the name of the restricted object</summary>

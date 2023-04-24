@@ -51,9 +51,9 @@ namespace ADSK_ImportInvMaterialsSample
         }
 
         /// <summary>
-        /// Tells if the logged in user is an admin or not.
+        /// Validate user's configuration admin rights.
         /// </summary>
-        /// <returns>True if the user is an administrator. Otherwise false.</returns>
+        /// <returns>True if the user has access to Vault behavior configuration. Otherwise false.</returns>
         public static bool IsAdmin(Connection conn)
         {
             long userId = conn.WebServiceManager.SecurityService.Session.User.Id;
@@ -61,13 +61,12 @@ namespace ADSK_ImportInvMaterialsSample
             {
                 Permis[] permissions = conn.WebServiceManager.AdminService.GetPermissionsByUserId(userId);
 
-                // assume that if the current user has the AdminUserRead permission,
-                // then they are an admin.
-                long adminUserRead = 82;
+                long mVaultSetOptions = 76; //Vault Set Options
+                long mVaultGetOptions = 77; //Vault Get Options
 
                 foreach (Permis p in permissions)
                 {
-                    if (p.Id == adminUserRead)
+                    if (p.Id == mVaultSetOptions || p.Id == mVaultGetOptions)
                         return true;
                 }
             }

@@ -88,6 +88,9 @@ implement custom property definitions, create dependencies between existing prop
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.CCLibraryRMask_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.CDWasNotCopiedCorrectly">
+      <summary>Looks up a localized string similar to User doesn't have adequate permissions to complete this operation..</summary>
+    </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.ChangeOrder_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
@@ -309,7 +312,7 @@ shared working folder..</summary>
       <summary>Looks up a localized string similar to Downloading and Checking Out.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.DownloadingProgressCaption">
-      <summary>Looks up a localized string similar to Downloading.</summary>
+      <summary>Looks up a localized string similar to Downloading....</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.EditExactLengthError">
       <summary>Looks up a localized string similar to Value '{0}' is invalid. It must be exactly {1} character(s) in length.</summary>
@@ -343,6 +346,9 @@ shared working folder..</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.entityDescriptionLibraryFolder">
       <summary>Looks up a localized string similar to Library Folder.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.ErrorColumnHeading">
+      <summary>Looks up a localized string similar to Error.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.File_Store_128">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
@@ -408,6 +414,9 @@ references. Please run the Update File Reference command on parent file..</summa
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.Item_64">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.ItemMaster_16">
+      <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
+    </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.LargeFolder128">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
@@ -433,6 +442,9 @@ references. Please run the Update File Reference command on parent file..</summa
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.LibraryMask_16">
+      <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.LifecycleState">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.LifecycleStateLabel">
@@ -601,10 +613,31 @@ references. Please run the Update File Reference command on parent file..</summa
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.visualizationCompliantUserVerified">
       <summary>Looks up a localized string similar to User Verified.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Add_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.Warning_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Add_small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.WriteErrAccess">
+      <summary>Looks up a localized string similar to System doesn't have access to update the file..</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.WriteErrCorruption">
+      <summary>Looks up a localized string similar to Copied file became corrupted..</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.WriteErrNotSupported">
+      <summary>Looks up a localized string similar to File type is not supported for properties update..</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.WriteErrorError">
+      <summary>Looks up a localized string similar to File properties could not be updated..</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.WriteErrProviderNotFound">
+      <summary>Looks up a localized string similar to File type is not supported for properties update..</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Resource.WriteVaultPropsError">
+      <summary>Looks up a localized string similar to Vault properties could not be updated..</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Add_Large_16">
+      <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Add_small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.changeOrderVaultStatusGoldLock">
@@ -616,7 +649,7 @@ references. Please run the Update File Reference command on parent file..</summa
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Culture">
       <summary>Overrides the current thread's CurrentUICulture property for all resource lookups using this strongly typed resource class.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Empty">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Empty_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.fileStatusCheckedOut">
@@ -697,16 +730,16 @@ references. Please run the Update File Reference command on parent file..</summa
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.fileStatusVersionNotFoundDesc">
       <summary>Looks up a localized string similar to Unknown Status.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Checked_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Checked_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Checked_Small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Checked_Small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Green_Circle_Small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.itemVaultStatusGoldLock">
@@ -718,10 +751,10 @@ references. Please run the Update File Reference command on parent file..</summa
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.propertyLockedTooltip">
       <summary>Looks up a localized string similar to Locked.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Red_Refresh_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Red_Refresh_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Red_Refresh_Small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Red_Refresh_Small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.ResourceManager">
@@ -826,34 +859,34 @@ references. Please run the Update File Reference command on parent file..</summa
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.VaultStatusUnknown_Bigger_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Checked_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Checked_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Checked_Small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Checked_Small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Circle_Small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Half_Circle_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Half_Circle_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Half_Circle_Small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Half_Circle_Small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Triangle_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Triangle_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Triangle_Small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.White_Triangle_Small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Yellow_Circle_Info_Large">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Yellow_Circle_Info_Large_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Yellow_Circle_Info_small">
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.VaultStatusResource.Yellow_Circle_Info_small_16">
       <summary>Looks up a localized resource of type System.Drawing.Bitmap.</summary>
     </member>
     <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Currency.IFileAcquisitionOperation">
@@ -2646,9 +2679,17 @@ states as specified.</summary>
       <summary>Creates an ImageInfo object</summary>
       <param>A value that uniquely identifies this image. This can be used to prevent storing the same image in an ImageList or other container multiple times.The image object managed by this ImageInfo object.</param>
     </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.#ctor(System.String,System.Func{System.Drawing.Image})">
+      <summary>Creates an ImageInfo object</summary>
+      <param>A value that uniquely identifies this image. This can be used to prevent storing the same image in an ImageList or other container multiple times.Fuction to get image.</param>
+    </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.#ctor(System.String,System.Drawing.Image,System.String)">
       <summary>Creates an ImageInfo object</summary>
       <param>A value that uniquely identifies this image. This can be used to prevent storing the same image in an ImageList or other container multiple times.The image object managed by this ImageInfo object.An optional description of this image that can be used for tooltips (ie. "Library Folder")</param>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.#ctor(System.String,System.Drawing.Image,System.Func{System.Drawing.Image},System.Func{System.Drawing.Image},System.String)">
+      <summary>Creates an ImageInfo object</summary>
+      <param>A value that uniquely identifies this image. This can be used to prevent storing the same image in an ImageList or other container multiple times.image.The function to get image object managed by this ImageInfo object.The function to get image object managed by this ImageInfo object.An optional description of this image that can be used for tooltips (ie. "Library Folder")</param>
     </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.Equals(System.Object)">
       <summary>Tests if <paramref name="obj" /> is equal to this ImageInfo object.</summary>
@@ -2659,11 +2700,18 @@ states as specified.</summary>
       <summary>Gets a copy of the image managed by this ImageInfo.</summary>
       <returns>A copy of the image. The caller is reponsible for calling Dispose on the copied image.</returns>
     </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.CustomImageReceiver">
+      <summary>Should use ImageReceiver inside to get image and than do some modifications (like apply Mask for Category). Has higher priority than ImageReceiver. If it is
+present we should use this func. If object's image doesn't have additional modifications that should be done above original skin image - use ImageReceiver.</summary>
+    </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.Description">
       <summary>Gets or sets an optional textual description of this image. This might be used as a tooltip (ie. "Library Folder")</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.Image">
       <summary>Sets the image managed by this ImageInfo.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.ImageReceiver">
+      <summary>Function to get original skin Image on demand.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.ImageInfo.Tag">
       <summary>Gets or sets a unique tag that represents this image. The tag should be somewhat human readable as this is the value that will often be store in grid cells for
@@ -3263,6 +3311,12 @@ PropertyDefinition</param>
     <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinitionIds.Server.LifeCycleState">
       <summary>The "State" property</summary>
     </member>
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinitionIds.Server.LifeCycleStateGlyph">
+      <summary>The "LifeCycleStateGlyph" property</summary>
+    </member>
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinitionIds.Server.LifeCycleStateGlyphVer">
+      <summary>The "LifeCycleStateGlyph(Ver)" property</summary>
+    </member>
     <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinitionIds.Server.LifeCycleStateVersion">
       <summary>The "State(Ver)" property</summary>
     </member>
@@ -3824,6 +3878,10 @@ because the site either has missing facilities or products, or has a lower versi
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Results.GetAvailableVaultsResult.ErrorMessage">
       <summary>Gets a failure message that is applicable when  has a value of False</summary>
     </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Results.GetAvailableVaultsResult.ErrorMessagesWithHelp">
+      <summary>Gets a failure messages with help links that is applicable when  has
+a value of False</summary>
+    </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Results.GetAvailableVaultsResult.Success">
       <summary>Gets whether or not the GetAvailableVaults operation was a success.</summary>
     </member>
@@ -4080,6 +4138,11 @@ at runtime by vault users. Configuration data includes information about EntityC
       <summary>Deletes an existing category.</summary>
       <param>The category to delete.If the delete failed then this list contains the reasons for the failure.</param>
       <returns>True if the delete was successful, false if there were restrictions.</returns>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Services.Connection.ICategoryManager.GetAssociatedCategories(System.Int64,System.String)">
+      <summary>Get a cache of categories with their associated property definition and Entity Class IDs.</summary>
+      <param>Property Definition IDEntity Class ID</param>
+      <returns>List of EntityCategory</returns>
     </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Services.Connection.ICategoryManager.GetCategoryGlyph(Autodesk.DataManagement.Client.Framework.Vault.Currency.Entities.EntityCategory)">
       <summary>Retrieves the glyph object associated with a category</summary>
@@ -4836,6 +4899,32 @@ entity classes will be included</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Settings.RelationshipGatheringSettings.IncludeLinksSettings">
       <summary>Gets the subset of settings specific to Links.</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.ImageIds16">
+      <summary>Constants for all of the 16x16 images. Each of these constants corresponds do a corresponding embedded resource. The Map below maps the Id to the correct
+embedded resource. The enum values must start with zero, and then increase by 1</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.ImageIds32">
+      <summary>Constants for all of the 32x32 images. Each of these constants corresponds do a corresponding embedded resource. The Map below maps the Id to the correct
+embedded resource. The enum values must start with zero, and then increase by 1</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages">
+      <summary>This class encapsulates all of the images that are contained in this assembly. These images will be merged with the master application imagelist, and they can
+be accessed through utility methods provided in this class</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.RegisterWithImageManager">
+      <summary>Registers the images in this assembly with the image manager. This must be called on initialization before any of the images in this assembly are used</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.GetImage(Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.ImageIds16)">
+      <summary>Get the image for one of the framework 16x16 images.</summary>
+      <param>the enum value of the image to retrieve the index for</param>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.GetImage(Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.ImageIds32)">
+      <summary>Get the image for one of the framework 32x32 images.</summary>
+      <param>the enum value of the image to retrieve the index for</param>
+    </member>
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Utils.FrameworkVaultImages.ImageCategory">
+      <summary>This category uniquely categorizes all of the images in this assembly.</summary>
     </member>
   </members>
 </doc>

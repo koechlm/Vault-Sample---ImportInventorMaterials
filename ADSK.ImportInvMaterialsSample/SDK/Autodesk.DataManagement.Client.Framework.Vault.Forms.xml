@@ -81,22 +81,22 @@ specific entities or for specific properties of entities. These styles will be r
     <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Library.LogoutDialogShown">
       <summary>For performance logging.</summary>
     </member>
-    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.ViewStyle">
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.ViewStyle">
       <summary>Identifies the various views available to the </summary>
     </member>
-    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.ViewStyle.DetailView">
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.ViewStyle.DetailView">
       <summary>A view which display entities as a row with configurable columns to display the various properties</summary>
     </member>
-    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.ViewStyle.ListView">
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.ViewStyle.ListView">
       <summary>A view which displays entities as a list oriented in multiple columns. The view displays a small icon and the entity name</summary>
     </member>
-    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.ViewStyle.SmallThumbnailView">
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.ViewStyle.SmallThumbnailView">
       <summary>A view which displays entities as a list of 32x32 thumbnail icons (and their entity name) flowing from left to right.</summary>
     </member>
-    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.ViewStyle.MediumThumbnailView">
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.ViewStyle.MediumThumbnailView">
       <summary>A view which displays entities as a list of 64x64 thumbnail icons (and their entity name) flowing from left to right.</summary>
     </member>
-    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.ViewStyle.LargeThumbnailView">
+    <member name="F:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.ViewStyle.LargeThumbnailView">
       <summary>A view which displays entities as a list of 128x128 thumbnail icons (and their entity name) flowing from left to right.</summary>
     </member>
     <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultTreeControl.BehaviorOptions.ExpandBehaviorOptions">
@@ -109,29 +109,180 @@ specific entities or for specific properties of entities. These styles will be r
       <summary>When performing an "Expand N Levels" or "Expand All" operation on a node, the tree will remove all current children nodes from the specified node and
 re-request them from the IVaultTreeModel</summary>
     </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl">
+      <summary>A grid control which can display Vault Entities and their properties. Users can
+navigate the vault by drilling down on the Entities.</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions">
+      <summary>Options which allows the user to configure various behaviors of the
+</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.Configuration">
+      <summary>This class provides configuration data for .</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.CustomizationOptions">
+      <summary>Options which allows the user to provide algorithms which customize various characteristics of the
+.</summary>
+    </member>
+    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.DragDropOptions">
+      <summary>Options which allow the user to configure drag and drop behavior of the
+.</summary>
+    </member>
     <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.RevisionsDropdownControl">
       <summary>A specialized combobox control which can a list of available Revisions/Versions for any Entity
 Entity.</summary>
     </member>
-    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl">
-      <summary>A grid control which can display Vault Entities and their properties. Users can
-navigate the vault by drilling down on the Entities.</summary>
-    </member>
-    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions">
-      <summary>Options which allows the user to configure various behaviors of the </summary>
-    </member>
-    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.Configuration">
-      <summary>This class provides configuration data for .</summary>
-    </member>
-    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.CustomizationOptions">
-      <summary>Options which allows the user to provide algorithms which customize various characteristics of the
-.</summary>
-    </member>
-    <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.DragDropOptions">
-      <summary>Options which allow the user to configure drag and drop behavior of the .</summary>
-    </member>
     <member name="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultNavigationPathComboboxControl">
       <summary>A combobox control which shows a navigation path from an Entity all the way up to a Root object. Each entity in the path is a selectable in the combobox.</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.#ctor">
+      <summary>Creates an instance of the ClassicVaultBrowserControl object</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.LoadViewState">
+      <summary>Loads the grid settings from the persistent storage.</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.ReEvaluateCustomFilters">
+      <summary>Forces the control to compute which entities should be displayed.</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.SaveViewState">
+      <summary>Saves the grid settings to the persistent storage.</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.ServerSortCriteriaNotify">
+      <summary>Notifies subscribers that server sort criteria has been changed</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.SetDataSource(Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.Configuration,Autodesk.DataManagement.Client.Framework.Vault.Forms.Interfaces.IVaultNavigationModel)">
+      <summary>Connects the user control to the data model that is used to supply entities to the control.</summary>
+      <param>Provides configuration data to this control, including the properties to display, sort order, etc...The model which is used navigate the vault and provide Entity objects to display</param>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.UpdateDataSourceAsync(System.Collections.Generic.IEnumerable{Autodesk.DataManagement.Client.Framework.Vault.Currency.Entities.IEntity},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+      <summary>Forces the grid to recompute it's values for a list of properties on specific entities</summary>
+      <param>The entities whose properties should be recomputedThe system names of the property definitions to updateThe cancellation token. The cancellation token is checked on the ui thread prior to updating the ui</param>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.UpdateDataSource(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+      <summary>Forces the grid to recompute it's values for a list of properties</summary>
+      <param>The system names of the property definitions to updateThe cancellation token. The cancellation token is checked on the ui thread prior to updating the ui</param>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.UpdateDataSource(System.Collections.Generic.IEnumerable{Autodesk.DataManagement.Client.Framework.Vault.Currency.Entities.IEntity},System.Collections.Generic.IEnumerable{System.String})">
+      <summary>Forces the grid to recompute it's values for a list of properties on specific entities</summary>
+      <param>The entities whose properties should be recomputedThe system names of the property definitions to update</param>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.OptionsBehavior">
+      <summary>Gets a set of options which allows the user to configure various behaviors of the control</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.OptionsDragDrop">
+      <summary>Gets a set of options which allows the user to configure drag and drop behavior of the control</summary>
+    </member>
+    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.EntityDoubleClick">
+      <summary>This event is fired when an entity is double clicked. If the entity is a folder or a other container, then the folder will be opened and the event will not be
+fired. Otherwise, this event is fired.</summary>
+    </member>
+    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.Exception">
+      <summary>Event fired when an exception occurs</summary>
+    </member>
+    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.GetContextMenu">
+      <summary>This event is fired when a right click occurs in the grid. The handler of the event can provide a custom context menu to display. Otherwise, the default
+context menu will be shown.</summary>
+    </member>
+    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.SelectionChanged">
+      <summary>Event fired when selection changed</summary>
+    </member>
+    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.ServerSortChanged">
+      <summary>Event fired when the sorted columns change. This only fires when the server properties have changes (ie. not the ones marked as calculated) since this is used
+to determine when we need to refresh the view.</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.EnableAutoPreview(System.Boolean,System.String,System.Int32)">
+      <summary>Enables or disables the AutoPreview option in the .</summary>
+      <param>When enabled the AutoPreview option is displayed in the context menu.The property to display for AutoPreview.Number of lines to display for AutoPreview.</param>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.AllowColumnChooser">
+      <summary>Gets or sets whether the  supports run time column configuration</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.AllowColumnScrolling">
+      <summary>Gets or sets whether the Detail
+View of the
+<see cref="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl" /> squeezes all of it's columns in the available horizontal real
+estate, or if it uses a horizontal scroll bar such that some columns display off screen.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.AllowOverrideSelections">
+      <summary>Gets or sets whether right clicking in the  replaces the existing
+selection, or temporarily overrides it. An override will highlight the clicked on row but when the context menu goes away, the original selection will be
+restored.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.AvailableViews">
+      <summary>Gets or sets the list of available views
+for this Vault Browser Control.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.DisplayAutoPreview">
+      <summary>Gets or sets whether the  displays the AutoPreview rows.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.EmptyGridMessage">
+      <summary>Gets or sets the text that displays in the  when it contains no data</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.LoadingMessage">
+      <summary>Gets or sets the text that displays in the  when it is loading the
+contents of a folder</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.MultiSelect">
+      <summary>Gets or sets whether the  supports single or multiple selection</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.SortData">
+      <summary>Gets the current sort data being used for the .</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.BehaviorOptions.View">
+      <summary>Gets or sets the type of view to display in the </summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.Configuration.#ctor(Autodesk.DataManagement.Client.Framework.Vault.Currency.Connections.Connection,System.String,Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinitionDictionary)">
+      <summary>Creates an instance of the Configuration class</summary>
+      <param>A connection to a vault serverA value which defines a unique namespace to persist the settings of this control. If two instances of the control share the same key, then they will share the
+same persisted state.A list of all of the Property Definitions that are available for
+display in this control. If null, all available Property Definitions will be used.</param>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.Configuration.AddInitialGrouping(System.String,System.Boolean)">
+      <summary>Creates a Group specification for a property.</summary>
+      <param>The system name of the Property Definition that is being groupedTrue if the sort is in ascending order. False if it is in descending order</param>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.Configuration.UnhiddenColumns">
+      <summary>Gets and set the list of FieldName of columns that can't hidden in the.</summary>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.CustomizationOptions.RegisterHotCellHandler(System.String,Autodesk.DataManagement.Client.Framework.Vault.Forms.Interfaces.IHotCellHandler)">
+      <summary>Associates a  with a specific column based on its
+<see cref="T:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinition" />'s system name.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.CustomizationOptions.CanDisplayEntityHandler">
+      <summary>Gets or sets a delegate which allows the implementor to control which entities are displayed</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.CustomizationOptions.GetCellStyleHandler">
+      <summary>Gets or sets a delegate which allows the implementor to provide a custom format for a particular cell in the
+</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.CustomizationOptions.GetCustomTooltipHandler">
+      <summary>Gets or sets a delegate which allows the implementor to provide a custom tooltip for any property values displayed in the
+</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.CustomizationOptions.GetRowStyleHandler">
+      <summary>Gets or sets a delegate which allows the implementor to provide a custom format for an entire row in the
+</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.DragDropOptions.DragDropEvent">
+      <summary>This Action is required if the control should act as a target for drag and drop operations. The implementor of this action is responsible for providing the
+drop functionality.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.DragDropOptions.DragEnterEvent">
+      <summary>This Action supports the controls ability to act as a target for drag and drop operations.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.DragDropOptions.DragLeaveEvent">
+      <summary>This Action supports the controls ability to act as a target for drag and drop operations.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.DragDropOptions.DragOverEvent">
+      <summary>This Action supports the controls ability to act as a target for drag and drop operations. The implementor of this action will typically set the Effects on the
+DragEventArgs.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.DragDropOptions.DragSource">
+      <summary>This Func is required if the control should act as a source for drag and drop operations. This Func is called when a drag operation has begun and the control
+needs to collect information about the drag object.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.ClassicVaultBrowserControl.DragDropOptions.IsDropTarget">
+      <summary>Gets or sets if the associated control should be a drop target.</summary>
     </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.RevisionsDropdownControl.#ctor">
       <summary>Creates an instance of the RevisionsDropdownControl</summary>
@@ -181,154 +332,6 @@ the text in the drop down will also show the specific version number of the file
     </member>
     <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.RevisionsDropdownControl.SelectionChanged">
       <summary>Occurs when the selected revision/version is changed through the drop-down menu.</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.#ctor">
-      <summary>Creates an instance of the VaultBrowserControl object</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.LoadViewState">
-      <summary>Loads the grid settings from the persistent storage.</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.ReEvaluateCustomFilters">
-      <summary>Forces the control to compute which entities should be displayed.</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.SaveViewState">
-      <summary>Saves the grid settings to the persistent storage.</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.ServerSortCriteriaNotify">
-      <summary>Notifies subscribers that server sort criteria has been changed</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.SetDataSource(Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.Configuration,Autodesk.DataManagement.Client.Framework.Vault.Forms.Interfaces.IVaultNavigationModel)">
-      <summary>Connects the user control to the data model that is used to supply entities to the control.</summary>
-      <param>Provides configuration data to this control, including the properties to display, sort order, etc...The model which is used navigate the vault and provide Entity objects to display</param>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.UpdateDataSourceAsync(System.Collections.Generic.IEnumerable{Autodesk.DataManagement.Client.Framework.Vault.Currency.Entities.IEntity},System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
-      <summary>Forces the grid to recompute it's values for a list of properties on specific entities</summary>
-      <param>The entities whose properties should be recomputedThe system names of the property definitions to updateThe cancellation token. The cancellation token is checked on the ui thread prior to updating the ui</param>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.UpdateDataSource(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
-      <summary>Forces the grid to recompute it's values for a list of properties</summary>
-      <param>The system names of the property definitions to updateThe cancellation token. The cancellation token is checked on the ui thread prior to updating the ui</param>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.UpdateDataSource(System.Collections.Generic.IEnumerable{Autodesk.DataManagement.Client.Framework.Vault.Currency.Entities.IEntity},System.Collections.Generic.IEnumerable{System.String})">
-      <summary>Forces the grid to recompute it's values for a list of properties on specific entities</summary>
-      <param>The entities whose properties should be recomputedThe system names of the property definitions to update</param>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.OptionsBehavior">
-      <summary>Gets a set of options which allows the user to configure various behaviors of the control</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.OptionsDragDrop">
-      <summary>Gets a set of options which allows the user to configure drag and drop behavior of the control</summary>
-    </member>
-    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.EntityDoubleClick">
-      <summary>This event is fired when an entity is double clicked. If the entity is a folder or a other container, then the folder will be opened and the event will not be
-fired. Otherwise, this event is fired.</summary>
-    </member>
-    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.Exception">
-      <summary>Event fired when an exception occurs</summary>
-    </member>
-    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.GetContextMenu">
-      <summary>This event is fired when a right click occurs in the grid. The handler of the event can provide a custom context menu to display. Otherwise, the default
-context menu will be shown.</summary>
-    </member>
-    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.SelectionChanged">
-      <summary>Event fired when selection changed</summary>
-    </member>
-    <member name="E:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.ServerSortChanged">
-      <summary>Event fired when the sorted columns change. This only fires when the server properties have changes (ie. not the ones marked as calculated) since this is used
-to determine when we need to refresh the view.</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.EnableAutoPreview(System.Boolean,System.String,System.Int32)">
-      <summary>Enables or disables the AutoPreview option in the .</summary>
-      <param>When enabled the AutoPreview option is displayed in the context menu.The property to display for AutoPreview.Number of lines to display for AutoPreview.</param>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.AllowColumnChooser">
-      <summary>Gets or sets whether the  supports run time column configuration</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.AllowColumnScrolling">
-      <summary>Gets or sets whether the Detail View
-of the <see cref="T:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl" /> squeezes all of it's columns in the available horizontal real
-estate, or if it uses a horizontal scroll bar such that some columns display off screen.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.AllowOverrideSelections">
-      <summary>Gets or sets whether right clicking in the  replaces the existing
-selection, or temporarily overrides it. An override will highlight the clicked on row but when the context menu goes away, the original selection will be
-restored.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.AvailableViews">
-      <summary>Gets or sets the list of available views for
-this Vault Browser Control.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.DisplayAutoPreview">
-      <summary>Gets or sets whether the  displays the AutoPreview rows.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.EmptyGridMessage">
-      <summary>Gets or sets the text that displays in the  when it contains no data</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.LoadingMessage">
-      <summary>Gets or sets the text that displays in the  when it is loading the
-contents of a folder</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.MultiSelect">
-      <summary>Gets or sets whether the  supports single or multiple selection</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.SortData">
-      <summary>Gets the current sort data being used for the .</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.BehaviorOptions.View">
-      <summary>Gets or sets the type of view to display in the </summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.Configuration.#ctor(Autodesk.DataManagement.Client.Framework.Vault.Currency.Connections.Connection,System.String,Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinitionDictionary)">
-      <summary>Creates an instance of the Configuration class</summary>
-      <param>A connection to a vault serverA value which defines a unique namespace to persist the settings of this control. If two instances of the control share the same key, then they will share the
-same persisted state.A list of all of the Property Definitions that are available for
-display in this control. If null, all available Property Definitions will be used.</param>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.Configuration.AddInitialGrouping(System.String,System.Boolean)">
-      <summary>Creates a Group specification for a property.</summary>
-      <param>The system name of the Property Definition that is being groupedTrue if the sort is in ascending order. False if it is in descending order</param>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.Configuration.UnhiddenColumns">
-      <summary>Gets and set the list of FieldName of columns that can't hidden in the .</summary>
-    </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.CustomizationOptions.RegisterHotCellHandler(System.String,Autodesk.DataManagement.Client.Framework.Vault.Forms.Interfaces.IHotCellHandler)">
-      <summary>Associates a  with a specific column based on its
-<see cref="T:Autodesk.DataManagement.Client.Framework.Vault.Currency.Properties.PropertyDefinition" />'s system name.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.CustomizationOptions.CanDisplayEntityHandler">
-      <summary>Gets or sets a delegate which allows the implementor to control which entities are displayed</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.CustomizationOptions.GetCellStyleHandler">
-      <summary>Gets or sets a delegate which allows the implementor to provide a custom format for a particular cell in the
-</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.CustomizationOptions.GetCustomTooltipHandler">
-      <summary>Gets or sets a delegate which allows the implementor to provide a custom tooltip for any property values displayed in the
-</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.CustomizationOptions.GetRowStyleHandler">
-      <summary>Gets or sets a delegate which allows the implementor to provide a custom format for an entire row in the
-</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.DragDropOptions.DragDropEvent">
-      <summary>This Action is required if the control should act as a target for drag and drop operations. The implementor of this action is responsible for providing the
-drop functionality.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.DragDropOptions.DragEnterEvent">
-      <summary>This Action supports the controls ability to act as a target for drag and drop operations.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.DragDropOptions.DragLeaveEvent">
-      <summary>This Action supports the controls ability to act as a target for drag and drop operations.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.DragDropOptions.DragOverEvent">
-      <summary>This Action supports the controls ability to act as a target for drag and drop operations. The implementor of this action will typically set the Effects on the
-DragEventArgs.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.DragDropOptions.DragSource">
-      <summary>This Func is required if the control should act as a source for drag and drop operations. This Func is called when a drag operation has begun and the control
-needs to collect information about the drag object.</summary>
-    </member>
-    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultBrowserControl.DragDropOptions.IsDropTarget">
-      <summary>Gets or sets if the associated control should be a drop target.</summary>
     </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Controls.VaultNavigationPathComboboxControl.#ctor">
       <summary>Constructs an instance of a VaultNavigationPathComboboxControl class</summary>
@@ -421,12 +424,6 @@ sorting data'.</summary>
     <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnImageList.#ctor">
       <summary>Constructs an instance of a ColumnImageList class</summary>
     </member>
-    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnImageList.AssignImage(System.Drawing.Image,System.Object,System.String,System.Boolean)">
-      <summary>Creates a mapping between an image and a value</summary>
-      <param>The image to display for the specified tag valueA value associated with the image. This is the value that will be set as the property value in a data source bound to a grid.A human readable description of the image used when showing the name of the image in a list (i.e. Filters) or a tooltipIf true, then this image will overwrite an existing image with the same tag. If false, then we will ignore the specified image if another image exists with the
-same tag.</param>
-      <returns>The index in the image list</returns>
-    </member>
     <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnImageList.Clear">
       <summary>Removes all images from the image list</summary>
     </member>
@@ -434,6 +431,18 @@ same tag.</param>
       <summary>Gets the image associated with the specified tag</summary>
       <param>The tag which uniquely identifies the image to retrieve</param>
       <returns>An image object, or null if there is not an image associated with the tag. The image must be disposed when the caller is done consuming it</returns>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnImageList.AssignImage(System.Func{System.Drawing.Image},System.Object,System.String,System.Boolean)">
+      <summary>Creates a mapping between an image and a value</summary>
+      <param>The function for getting an image to display for the specified tag valueA value associated with the image. This is the value that will be set as the property value in a data source bound to a grid.A human readable description of the image used when showing the name of the image in a list (i.e. Filters) or a tooltipIf true, then this image will overwrite an existing image with the same tag. If false, then we will ignore the specified image if another image exists with the
+same tag.</param>
+      <returns>The index in the image list</returns>
+    </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnImageList.AssignImage(System.Drawing.Image,System.Object,System.String,System.Boolean)">
+      <summary>Creates a mapping between an image and a value</summary>
+      <param>The image to display for the specified tag valueA value associated with the image. This is the value that will be set as the property value in a data source bound to a grid.A human readable description of the image used when showing the name of the image in a list (i.e. Filters) or a tooltipIf true, then this image will overwrite an existing image with the same tag. If false, then we will ignore the specified image if another image exists with the
+same tag.</param>
+      <returns>The index in the image list</returns>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnImageList.AllowDynamicAddingOfMissingImages">
       <summary>Gets or sets whether images should be added to the image list when an image is identified as being missing from the list</summary>
@@ -475,6 +484,9 @@ same tag.</param>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnSettings.FormatString">
       <summary>Gets or sets the format string to use to display property values. If null or empty, the property values will be displayed with no formatting options</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnSettings.GettingHeaderImageFunction">
+      <summary>Gets or sets the logic for getting an optional image that is displaying as a column header. It can be used to update the image dynamically.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.ColumnSettings.GetToolTip">
       <summary>Gets or sets a delegate which allows the implementor to provide a custom tooltip for values displayed in this column</summary>
@@ -724,6 +736,18 @@ api</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.Style.BackColor">
       <summary>Gets or sets the background color for a visual element</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.Style.CHECK_OUT_BY_ME_COLOR">
+      <summary>Defines the color that will be used to mark files that have been checked out by the current user.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.Style.CHECK_OUT_BY_ME_FONTSTYLE">
+      <summary>Defines the font that will be used to mark files that have been checked out by the current user.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.Style.CHECK_OUT_BY_OTHER_COLOR">
+      <summary>Defines the color that will be used to mark files that have been checked out by other user.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.Style.CHECK_OUT_BY_OTHER_FONTSTYLE">
+      <summary>Defines the font that will be used to mark files that have been checked out by other user.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Vault.Forms.Currency.Style.Font">
       <summary>Gets or sets the font for a visual element</summary>

@@ -1224,6 +1224,9 @@ underlying service implementation.</summary>
     <member name="T:Autodesk.Connectivity.WebServices.BOMInst">
       <summary>Parent-child relationship described by the BOM.</summary>
     </member>
+    <member name="T:Autodesk.Connectivity.WebServices.BOMInstAttr">
+      <summary>Instances within the BOM can be attributed with additional information using BOMInstAttr objects.</summary>
+    </member>
     <member name="T:Autodesk.Connectivity.WebServices.BOMProp">
       <summary>A property definition used to attribute components within the BOM.</summary>
     </member>
@@ -2954,6 +2957,9 @@ version of a File.</summary>
     <member name="P:Autodesk.Connectivity.WebServices.BOM.InstArray">
       <summary>Array of Instances of BOM Components.</summary>
     </member>
+    <member name="P:Autodesk.Connectivity.WebServices.BOM.InstPropArray">
+      <summary>Array of Instance Attributes.</summary>
+    </member>
     <member name="P:Autodesk.Connectivity.WebServices.BOM.PropArray">
       <summary>Array of Properties.</summary>
     </member>
@@ -3064,6 +3070,18 @@ overridden to Reference.</summary>
       <summary>A non-negative value used to represent the BOM Quantity Override for the child Component within the parent. When this is provided the value overrides the
 calculated total quantity. QuantOverde should only be set on an Instance element where BOMStructOverde is set to “Default”. If there is no Quantity Override,
 the value should be set to "-1".</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.BOMInstAttr.Id">
+      <summary>A unique ID for this instance attribute.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.BOMInstAttr.InstId">
+      <summary>The ID of the instance that this attribute applies to.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.BOMInstAttr.PropId">
+      <summary>The ID of the property definition that this attribute applies to.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.BOMInstAttr.Val">
+      <summary>The value of the attribute.</summary>
     </member>
     <member name="P:Autodesk.Connectivity.WebServices.BOMProp.DispName">
       <summary>The display name of the property.</summary>
@@ -5872,8 +5890,26 @@ the Vault.</returns>
     <member name="P:Autodesk.Connectivity.WebServices.EntAttr.Cloaked">
       <summary>Is the entity cloaked for the current user.</summary>
     </member>
+    <member name="P:Autodesk.Connectivity.WebServices.EntAttr.CreateDateTime">
+      <summary>The date the entity attribute was created.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.EntAttr.CreatedByUserId">
+      <summary>The ID of the user that created the entity attribute.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.EntAttr.CreatedByUserName">
+      <summary>The name of the user that created the entity attribute.</summary>
+    </member>
     <member name="P:Autodesk.Connectivity.WebServices.EntAttr.EntityId">
       <summary>Entity tagged with this attribute.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.EntAttr.UpdateDateTime">
+      <summary>The date the entity attribute was updated.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.EntAttr.UpdatedByUserId">
+      <summary>The ID of the user that updated the entity attribute.</summary>
+    </member>
+    <member name="P:Autodesk.Connectivity.WebServices.EntAttr.UpdatedByUserName">
+      <summary>The name of the user that updated the entity attribute.</summary>
     </member>
     <member name="P:Autodesk.Connectivity.WebServices.EntAttr.Val">
       <summary>Value of the attribute.</summary>
@@ -8196,6 +8232,9 @@ of the actual assigned Item</summary>
     <member name="P:Autodesk.Connectivity.WebServices.LfCycDef.TransArray">
       <summary>An array of Life Cycle State Transitions</summary>
     </member>
+    <member name="P:Autodesk.Connectivity.WebServices.LfCycState.Color">
+      <summary>The color of the state.</summary>
+    </member>
     <member name="P:Autodesk.Connectivity.WebServices.LfCycState.CommArray">
       <summary>An array of suggested comments to use as file comments when changing a file life cycle state.</summary>
     </member>
@@ -8282,7 +8321,7 @@ of the actual assigned Item</summary>
         <para>The new Life Cycle Definition object.</para>
       </returns>
     </member>
-    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleService.AddLifeCycleState(System.Int64,System.String,System.String,System.String,System.Boolean,System.Boolean,Autodesk.Connectivity.WebServices.ACE[],System.String[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
+    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleService.AddLifeCycleState(System.Int64,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,Autodesk.Connectivity.WebServices.ACE[],System.String[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
       <summary>Adds a new lifecycle state.</summary>
       <returns>
         <para>The object for this Life Cycle State.</para>
@@ -8405,7 +8444,7 @@ of the actual assigned Item</summary>
         <para>The updated life cycle definition object.</para>
       </returns>
     </member>
-    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleService.UpdateLifeCycleState(System.Int64,System.String,System.String,System.Boolean,System.Boolean,System.String[],Autodesk.Connectivity.WebServices.ACE[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
+    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleService.UpdateLifeCycleState(System.Int64,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.String[],Autodesk.Connectivity.WebServices.ACE[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
       <summary>
         <para>Updates a Life Cycle State.</para>
       </summary>
@@ -8456,7 +8495,7 @@ of the actual assigned Item</summary>
     <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.AddLifeCycleDefinition(System.String,System.String,System.String,Autodesk.Connectivity.WebServices.SysAclBeh)">
       <summary>Not intended for public use.</summary>
     </member>
-    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.AddLifeCycleState(System.Int64,System.String,System.String,System.String,System.Boolean,System.Boolean,Autodesk.Connectivity.WebServices.ACE[],System.String[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
+    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.AddLifeCycleState(System.Int64,System.String,System.String,System.String,System.Int32,System.Boolean,System.Boolean,Autodesk.Connectivity.WebServices.ACE[],System.String[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
       <summary>Not intended for public use.</summary>
     </member>
     <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.AddLifeCycleStateTransition(System.Int64,System.Int64,Autodesk.Connectivity.WebServices.EnforceChildStateEnum,Autodesk.Connectivity.WebServices.EnforceContentStateEnum,Autodesk.Connectivity.WebServices.BumpRevisionEnum,Autodesk.Connectivity.WebServices.JobSyncPropEnum,Autodesk.Connectivity.WebServices.FileLinkTypeEnum,Autodesk.Connectivity.WebServices.FileLinkTypeEnum,System.Boolean,System.Boolean,System.Int64[],System.Int64[],Autodesk.Connectivity.WebServices.PropDefCond[],System.Boolean)">
@@ -8510,7 +8549,7 @@ of the actual assigned Item</summary>
     <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.UpdateLifeCycleDefinition(System.Int64,System.String,System.String,Autodesk.Connectivity.WebServices.SysAclBeh)">
       <summary>Not intended for public use.</summary>
     </member>
-    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.UpdateLifeCycleState(System.Int64,System.String,System.String,System.Boolean,System.Boolean,System.String[],Autodesk.Connectivity.WebServices.ACE[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
+    <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.UpdateLifeCycleState(System.Int64,System.String,System.String,System.Int32,System.Boolean,System.Boolean,System.String[],Autodesk.Connectivity.WebServices.ACE[],System.Boolean,System.Boolean,System.Int32,Autodesk.Connectivity.WebServices.RestrictPurgeOption,Autodesk.Connectivity.WebServices.ItemToFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[],Autodesk.Connectivity.WebServices.FolderFileSecurityModeEnum,Autodesk.Connectivity.WebServices.ACE[])">
       <summary>Not intended for public use.</summary>
     </member>
     <member name="M:Autodesk.Connectivity.WebServices.LifeCycleServiceBase.UpdateLifeCycleStateTransition(System.Int64,Autodesk.Connectivity.WebServices.BumpRevisionEnum,Autodesk.Connectivity.WebServices.JobSyncPropEnum,Autodesk.Connectivity.WebServices.EnforceChildStateEnum,Autodesk.Connectivity.WebServices.EnforceContentStateEnum,Autodesk.Connectivity.WebServices.FileLinkTypeEnum,Autodesk.Connectivity.WebServices.FileLinkTypeEnum,System.Boolean,System.Boolean,System.Int64[],System.Int64[],Autodesk.Connectivity.WebServices.PropDefCond[],System.Boolean)">

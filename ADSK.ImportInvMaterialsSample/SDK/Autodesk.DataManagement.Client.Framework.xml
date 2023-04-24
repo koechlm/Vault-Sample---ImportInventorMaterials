@@ -195,11 +195,18 @@ This parameter is passed uninitialized.</param>
       <summary>Constructs an instance of the Restriction class.</summary>
       <param>The name of the object that this restriction is about.The description of the reason for the restriction.Optional paramenter specifying if the restriction can be overridden.</param>
     </member>
+    <member name="M:Autodesk.DataManagement.Client.Framework.Currency.Restriction.#ctor(System.String,System.String,System.String,System.Boolean)">
+      <summary>Constructs an instance of the Restriction class with restriction text and reason.</summary>
+      <param>The name of the object that this restriction is about.The description of the reason for the restriction.The reason of restriction if needed 3rd column.Optional paramenter specifying if the restriction can be overridden.</param>
+    </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Currency.Restriction.IsOverrideable">
       <summary>Gets if the resriction can be overridden by the user.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Currency.Restriction.RestrictedObjectName">
       <summary>Gets the name of the object that this restriction affects.</summary>
+    </member>
+    <member name="P:Autodesk.DataManagement.Client.Framework.Currency.Restriction.RestrictionReason">
+      <summary>Gets the reason for this restriction if needed.</summary>
     </member>
     <member name="P:Autodesk.DataManagement.Client.Framework.Currency.Restriction.RestrictionText">
       <summary>Gets the reson for this restriction.</summary>
