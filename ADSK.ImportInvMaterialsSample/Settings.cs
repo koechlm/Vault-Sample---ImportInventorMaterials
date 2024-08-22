@@ -25,6 +25,9 @@ namespace ADSK_ImportInvMaterialsSample
         [XmlElement("mMatPropName")]
         public string mMatPropName;
 
+        [XmlElement("DefaultLibName")]
+        public string mDefaultLibName;
+
         #region for future use
         //[XmlElement("OutputPath")]
         //public string mOutPutPath;

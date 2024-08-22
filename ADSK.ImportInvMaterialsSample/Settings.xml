@@ -4,6 +4,9 @@
   <!-- The name/value pair of a setting -->
   <mMatPropName>Material</mMatPropName>
   
+  <!-- default Inventor material library (*.adsklib) -->
+  <DefaultLibName>InventorMaterialLibrary.adsklib</DefaultLibName>
+  
   <!-- Output Path -->
   <!--<OutputPath>C:\Temp\SD124422\</OutputPath>-->
 

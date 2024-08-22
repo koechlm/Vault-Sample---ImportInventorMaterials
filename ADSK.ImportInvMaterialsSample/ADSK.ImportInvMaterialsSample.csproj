@@ -47,7 +47,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>bin\x64\Release\2024\</OutputPath>
+    <OutputPath>bin\x64\Release\2025\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <Optimize>true</Optimize>
     <DebugType>pdbonly</DebugType>
@@ -56,6 +56,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <DocumentationFile>
     </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>VLTM-2023.0.0.F-icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autodesk.Connectivity.Explorer.ExtensibilityTools">
@@ -110,6 +113,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\MaterialCmd_Large.ico" />
+    <Content Include="Resources\MaterialCmd_Large.png" />
+    <Content Include="Resources\MaterialCmd_Std.ico" />
+    <Content Include="Resources\MaterialCmd_Std.png" />
     <Content Include="SDK\Autodesk.Inventor.Interop.dll" />
     <Content Include="SDK\Autodesk.Connectivity.Explorer.ExtensibilityTools.dll" />
     <Content Include="SDK\Autodesk.Connectivity.Extensibility.Framework.dll" />
@@ -120,6 +127,7 @@
     <Content Include="Settings.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="VLTM-2023.0.0.F-icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="stdole">
